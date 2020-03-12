@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -war target/CoronaVirusTracker-0.0.1-SNAPSHOT.war -Dserver.port=$PORT $JAR_OPTS
