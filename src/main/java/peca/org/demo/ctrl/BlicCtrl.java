@@ -8,6 +8,7 @@ import peca.org.demo.service.BlicJSoupService;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping("/blic")
 public class BlicCtrl {
