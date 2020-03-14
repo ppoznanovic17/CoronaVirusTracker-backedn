@@ -9,7 +9,6 @@ import peca.org.demo.model.LiveCoronaModel;
 import peca.org.demo.service.LiveStatsService;
 
 @CrossOrigin(origins = "http://localhost:8080")
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping(path = "/live")
 public class LiveCtrl {
