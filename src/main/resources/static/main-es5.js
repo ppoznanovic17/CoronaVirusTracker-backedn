@@ -1491,13 +1491,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "slider",
         value: function slider() {
-          if (this.currentPage < 5) {
-            this.currentPage++;
-          } else {
-            this.currentPage = 1;
-          }
+          if (!this.seeAllBool) {
+            if (this.currentPage < 5) {
+              this.currentPage++;
+            } else {
+              this.currentPage = 1;
+            }
 
-          if (!this.seeAllBool) this.getBlic(this.currentPage, this.limit);
+            this.getBlic(this.currentPage, this.limit);
+          }
         }
       }, {
         key: "seeAll",
@@ -1958,6 +1960,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, LiveServiceService);
 
         this.http = http;
+        this.baseUrl = 'http://localhost:8000/';
       }
 
       _createClass(LiveServiceService, [{
@@ -2045,6 +2048,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, TableServiceService);
 
         this.http = http;
+        this.baseUrl = 'https://corona-tracker-app-java.herokuapp.com/';
       }
 
       _createClass(TableServiceService, [{

@@ -748,14 +748,15 @@ class TableComponent {
         }
     }
     slider() {
-        if (this.currentPage < 5) {
-            this.currentPage++;
-        }
-        else {
-            this.currentPage = 1;
-        }
-        if (!this.seeAllBool)
+        if (!this.seeAllBool) {
+            if (this.currentPage < 5) {
+                this.currentPage++;
+            }
+            else {
+                this.currentPage = 1;
+            }
             this.getBlic(this.currentPage, this.limit);
+        }
     }
     seeAll() {
         this.service.getNearSerbiaAll().subscribe(res => {
@@ -987,6 +988,7 @@ __webpack_require__.r(__webpack_exports__);
 class LiveServiceService {
     constructor(http) {
         this.http = http;
+        this.baseUrl = 'http://localhost:8000/';
     }
     getLiveData() {
         let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
@@ -1028,6 +1030,7 @@ __webpack_require__.r(__webpack_exports__);
 class TableServiceService {
     constructor(http) {
         this.http = http;
+        this.baseUrl = 'https://corona-tracker-app-java.herokuapp.com/';
     }
     getNearSerbia() {
         let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
