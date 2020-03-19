@@ -338,7 +338,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Peca\Desktop\pomocno\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\Peca\Desktop\CoronaVirusTrack-frontend\src\styles.css */"./src/styles.css");
 
 
 /***/ })

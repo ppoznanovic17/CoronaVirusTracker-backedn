@@ -70,7 +70,7 @@ public class CoronaVirusDataService {
 
     }
 
-    @Scheduled(fixedDelay = 28512000, initialDelay = 6000)
+    @Scheduled(fixedDelay = 28512000, initialDelay = 3000)
         public void fetchVirusDataDeaths() throws IOException, InterruptedException {
 
             //System.out.println("umrlo");
@@ -117,7 +117,7 @@ public class CoronaVirusDataService {
 
     }
 
-    @Scheduled(fixedDelay = 28512000, initialDelay = 12000)
+    @Scheduled(fixedDelay = 28512000, initialDelay = 6000)
     public void fetchVirusDataRecovered() throws IOException, InterruptedException {
 
 
@@ -167,7 +167,7 @@ public class CoronaVirusDataService {
         allStats = newStats;
     }
 
-    @Scheduled(fixedDelay = 28512000, initialDelay = 24000)
+    @Scheduled(fixedDelay = 28512000, initialDelay = 9000)
     public void calculateAll() throws IOException, InterruptedException {
 
 

@@ -353,7 +353,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\Peca\Desktop\pomocno\src\styles.css */
+    /*! C:\Users\Peca\Desktop\CoronaVirusTrack-frontend\src\styles.css */
     "./src/styles.css");
     /***/
   }
